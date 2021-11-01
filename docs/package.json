@@ -6,11 +6,15 @@
   "description": "source for basica11y.com content",
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "publish": "echo 'TBD'"
+    "clean": "rm -fr dist",
+    "predeploy": "npm run clean && npm run build",
+    "deploy": "node ./scripts/publishDocs.js",
+    "start": "npm run serve"
   }
 }

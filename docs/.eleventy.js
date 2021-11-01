@@ -1,5 +1,6 @@
 module.exports = function(config) {
-  // Do stuff with config.* here...
+  // copy CNAME for gh-pages custom domain
+  config.addPassthroughCopy('CNAME')
 
   // return final configuration
   return {
