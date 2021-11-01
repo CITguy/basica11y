@@ -1,0 +1,17 @@
+{
+  "name": "basica11y",
+  "author": "Ryan Johnson",
+  "version": "1.0.0",
+  "description": "basica11y.com",
+  "private": true,
+  "scripts": {
+    "build": "echo 'TBD'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basica11y/basica11y.github.io.git"
+  },
+  "workspaces": [
+    "./docs"
+  ]
+}
